@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Studio — About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-hero">
+    <div class="section-label">Our story</div>
+    <h1>Built by makers,<br>for builders</h1>
+    <p>We're a small studio of designers and engineers who believe great software changes how people work and live.</p>
+  </div>
+
+  <!-- ── Mission ── -->
+  <section class="section" style="padding-top:0">
+    <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(280px,1fr))">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Our Mission</h3>
+        <p>To build products that are useful, beautiful, and maintainable. No bloat. No shortcuts. Just solid craft.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>Our Values</h3>
+        <p>Transparency, ownership, and a genuine care for the end user drive every decision we make.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Our Approach</h3>
+        <p>Iterative. Collaborative. Fast. We ship, learn, and improve — in close partnership with our clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num">2018</div>
+        <div class="stat-label">Founded</div>
+      </div>
+      <div>
+        <div class="stat-num">14</div>
+        <div class="stat-label">Team members</div>
+      </div>
+      <div>
+        <div class="stat-num">12</div>
+        <div class="stat-label">Countries served</div>
+      </div>
+      <div>
+        <div class="stat-num">$50M+</div>
+        <div class="stat-label">Client revenue driven</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Team ── -->
+  <section class="section">
+    <div class="section-label">The team</div>
+    <h2 class="section-title">People behind the work</h2>
+    <p class="section-sub">A tight-knit crew of specialists who love what they do.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar">👩‍💼</div>
+        <h3>Sarah Kim</h3>
+        <p>CEO & Co-founder</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">👨‍💻</div>
+        <h3>Alex Mercer</h3>
+        <p>CTO & Co-founder</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">🧑‍🎨</div>
+        <h3>Priya Nair</h3>
+        <p>Lead Designer</p>
+      </div>
+      <div class="team-card">
+        <div class="avatar">👨‍🔬</div>
+        <h3>Carlos Ruiz</h3>
+        <p>Head of Engineering</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── CTA ── -->
+  <section class="section" style="text-align:center; padding-top:4rem; padding-bottom:5rem;">
+    <h2 class="section-title" style="max-width:500px; margin:0 auto 1rem;">Want to work with us?</h2>
+    <p class="section-sub" style="margin:0 auto 2.5rem;">We're selective with our partnerships so we can give every project the attention it deserves.</p>
+    <a href="contact.html" class="btn btn-primary">Start a Conversation →</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nexus Studio. All rights reserved. &nbsp;·&nbsp;
+    <a href="about.html">About</a> &nbsp;·&nbsp;
+    <a href="services.html">Services</a> &nbsp;·&nbsp;
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

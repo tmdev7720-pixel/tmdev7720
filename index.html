@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Studio — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <a href="index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div>
+      <div class="hero-badge">✦ Digital Studio</div>
+      <h1>We craft <span class="grad">digital products</span><br>that matter</h1>
+      <p>Strategy, design, and engineering for ambitious companies. We turn complex problems into elegant, scalable solutions.</p>
+      <div class="btn-group">
+        <a href="services.html" class="btn btn-primary">Explore Services →</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div class="stats-band">
+    <div class="stats-inner">
+      <div>
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Projects delivered</div>
+      </div>
+      <div>
+        <div class="stat-num">40+</div>
+        <div class="stat-label">Happy clients</div>
+      </div>
+      <div>
+        <div class="stat-num">8</div>
+        <div class="stat-label">Years of experience</div>
+      </div>
+      <div>
+        <div class="stat-num">99%</div>
+        <div class="stat-label">Client satisfaction</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── What we do ── -->
+  <section class="section">
+    <div class="section-label">What we do</div>
+    <h2 class="section-title">Everything you need<br>to launch & grow</h2>
+    <p class="section-sub">From idea to production, we cover every layer of your product — so you can focus on your business.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>User research, wireframing, and pixel-perfect interfaces that delight and convert.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Web Development</h3>
+        <p>Fast, accessible, and scalable web apps built with modern frameworks.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Cross-platform iOS and Android apps with native performance and feel.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud & DevOps</h3>
+        <p>Infrastructure, CI/CD pipelines, and monitoring to keep your product running smoothly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Integration</h3>
+        <p>Bring intelligent features to your product — LLMs, automation, and data pipelines.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Security Audits</h3>
+        <p>Penetration testing and security reviews to protect your users and data.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── CTA ── -->
+  <section class="section" style="text-align:center; padding-top:5rem; padding-bottom:5rem;">
+    <div class="section-label">Ready?</div>
+    <h2 class="section-title" style="max-width:600px; margin:0 auto 1rem;">Start building something great today</h2>
+    <p class="section-sub" style="margin:0 auto 2.5rem;">Tell us about your project and we'll get back to you within one business day.</p>
+    <a href="contact.html" class="btn btn-primary" style="font-size:1rem; padding:.9rem 2.5rem;">Let's Talk →</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nexus Studio. All rights reserved. &nbsp;·&nbsp;
+    <a href="about.html">About</a> &nbsp;·&nbsp;
+    <a href="services.html">Services</a> &nbsp;·&nbsp;
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Studio — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-hero">
+    <div class="section-label">Get in touch</div>
+    <h1>Let's build something<br>together</h1>
+    <p>Whether you have a detailed brief or just a rough idea, we'd love to hear from you. We respond within one business day.</p>
+  </div>
+
+  <section class="section" style="padding-top:0; padding-bottom:5rem">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact details</h2>
+        <p>Reach out through the form or any of the channels below.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@nexusstudio.io</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+1 (555) 012-3456</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <h4>Office</h4>
+            <p>340 Pine St, Suite 800<br>San Francisco, CA 94104</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <h4>Hours</h4>
+            <p>Mon – Fri, 9 am – 6 pm PST</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem">
+          <div style="color:var(--muted); font-size:.85rem; font-weight:600; margin-bottom:.75rem; letter-spacing:.06em; text-transform:uppercase">Follow us</div>
+          <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+            <a href="#" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem">Twitter</a>
+            <a href="#" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem">LinkedIn</a>
+            <a href="#" class="btn btn-outline" style="padding:.5rem 1.1rem; font-size:.85rem">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-card">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:1.5rem">Send us a message</h3>
+        <form onsubmit="handleSubmit(event)">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem">
+            <div class="form-group">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="service">Service interested in</label>
+            <select id="service">
+              <option value="">Select a service…</option>
+              <option>UI / UX Design</option>
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option>AI Integration</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Approximate budget</label>
+            <select id="budget">
+              <option value="">Select a range…</option>
+              <option>Under $5,000</option>
+              <option>$5,000 – $15,000</option>
+              <option>$15,000 – $50,000</option>
+              <option>$50,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" placeholder="Describe your project, goals, and timeline…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1rem">Send Message →</button>
+        </form>
+        <div id="success-msg" style="display:none; margin-top:1.5rem; padding:1rem 1.25rem; background:rgba(108,99,255,.1); border:1px solid var(--accent); border-radius:8px; color:var(--accent); font-weight:600; text-align:center">
+          ✓ Message sent! We'll be in touch within one business day.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nexus Studio. All rights reserved. &nbsp;·&nbsp;
+    <a href="about.html">About</a> &nbsp;·&nbsp;
+    <a href="services.html">Services</a> &nbsp;·&nbsp;
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    e.target.style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+  }
+</script>
+</body>
+</html>

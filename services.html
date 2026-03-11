@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Studio — Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Nexus<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+  <div class="page-hero">
+    <div class="section-label">What we offer</div>
+    <h1>Services designed<br>to move fast</h1>
+    <p>We don't do everything — we do a handful of things exceptionally well, so your project gets real expertise at every stage.</p>
+  </div>
+
+  <section class="section" style="padding-top:1rem">
+
+    <!-- Design -->
+    <div class="service-row">
+      <div>
+        <div class="section-label">Design</div>
+        <h2 class="section-title" style="margin-bottom:.75rem">UI / UX Design</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem">We design interfaces that feel intuitive and look great. Our process starts with user research and ends with production-ready design systems you can hand straight to your devs.</p>
+        <ul style="color:var(--muted); padding-left:1.25rem; line-height:2">
+          <li>User research &amp; personas</li>
+          <li>Wireframes &amp; prototypes</li>
+          <li>Design systems &amp; component libraries</li>
+          <li>Usability testing</li>
+        </ul>
+      </div>
+      <div class="service-visual">🎨</div>
+    </div>
+
+    <!-- Web Dev -->
+    <div class="service-row reverse">
+      <div>
+        <div class="section-label">Engineering</div>
+        <h2 class="section-title" style="margin-bottom:.75rem">Web Development</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem">From marketing sites to complex SaaS dashboards. We build with Next.js, React, and Svelte — always optimizing for performance, accessibility, and SEO.</p>
+        <ul style="color:var(--muted); padding-left:1.25rem; line-height:2">
+          <li>React / Next.js / Svelte</li>
+          <li>REST &amp; GraphQL APIs</li>
+          <li>Performance optimization</li>
+          <li>E-commerce &amp; CMS integrations</li>
+        </ul>
+      </div>
+      <div class="service-visual">⚡</div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="service-row">
+      <div>
+        <div class="section-label">Mobile</div>
+        <h2 class="section-title" style="margin-bottom:.75rem">Mobile Apps</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem">One codebase, two platforms. We build cross-platform apps with React Native and Expo that feel native on both iOS and Android — and ship to both stores.</p>
+        <ul style="color:var(--muted); padding-left:1.25rem; line-height:2">
+          <li>React Native &amp; Expo</li>
+          <li>App Store &amp; Play Store publishing</li>
+          <li>Push notifications &amp; offline support</li>
+          <li>In-app payments</li>
+        </ul>
+      </div>
+      <div class="service-visual">📱</div>
+    </div>
+
+    <!-- AI -->
+    <div class="service-row reverse">
+      <div>
+        <div class="section-label">Intelligence</div>
+        <h2 class="section-title" style="margin-bottom:.75rem">AI Integration</h2>
+        <p style="color:var(--muted); margin-bottom:1.5rem">Add real intelligence to your product without the hype. We integrate LLMs, build RAG pipelines, and automate workflows using battle-tested patterns.</p>
+        <ul style="color:var(--muted); padding-left:1.25rem; line-height:2">
+          <li>LLM API integration (Claude, GPT, Gemini)</li>
+          <li>RAG &amp; vector search</li>
+          <li>Workflow automation</li>
+          <li>Fine-tuning &amp; evaluation</li>
+        </ul>
+      </div>
+      <div class="service-visual">🤖</div>
+    </div>
+
+  </section>
+
+  <!-- Pricing tiers -->
+  <div class="stats-band">
+    <div style="max-width:1140px; margin:0 auto">
+      <div style="text-align:center; margin-bottom:2.5rem">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Simple, transparent tiers</h2>
+      </div>
+      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(240px,1fr))">
+        <div class="card" style="text-align:center">
+          <div style="font-size:1.5rem; font-weight:800; margin-bottom:.25rem">Starter</div>
+          <div style="font-size:2.5rem; font-weight:900; color:var(--accent); margin-bottom:.5rem">$4k</div>
+          <div style="color:var(--muted); font-size:.85rem; margin-bottom:1.5rem">one-time project</div>
+          <ul style="color:var(--muted); font-size:.9rem; list-style:none; line-height:2.2; text-align:left">
+            <li>✓ &nbsp;Up to 5 pages</li>
+            <li>✓ &nbsp;Responsive design</li>
+            <li>✓ &nbsp;2 revision rounds</li>
+            <li>✓ &nbsp;30-day support</li>
+          </ul>
+        </div>
+        <div class="card" style="text-align:center; border-color:var(--accent); position:relative">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:.75rem;font-weight:700;padding:.25rem .9rem;border-radius:99px;letter-spacing:.06em">POPULAR</div>
+          <div style="font-size:1.5rem; font-weight:800; margin-bottom:.25rem">Growth</div>
+          <div style="font-size:2.5rem; font-weight:900; color:var(--accent); margin-bottom:.5rem">$12k</div>
+          <div style="color:var(--muted); font-size:.85rem; margin-bottom:1.5rem">one-time project</div>
+          <ul style="color:var(--muted); font-size:.9rem; list-style:none; line-height:2.2; text-align:left">
+            <li>✓ &nbsp;Full web or mobile app</li>
+            <li>✓ &nbsp;Custom design system</li>
+            <li>✓ &nbsp;API integrations</li>
+            <li>✓ &nbsp;90-day support</li>
+          </ul>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:1.5rem; font-weight:800; margin-bottom:.25rem">Scale</div>
+          <div style="font-size:2.5rem; font-weight:900; color:var(--accent); margin-bottom:.5rem">Custom</div>
+          <div style="color:var(--muted); font-size:.85rem; margin-bottom:1.5rem">retainer or project</div>
+          <ul style="color:var(--muted); font-size:.9rem; list-style:none; line-height:2.2; text-align:left">
+            <li>✓ &nbsp;Dedicated team</li>
+            <li>✓ &nbsp;Ongoing development</li>
+            <li>✓ &nbsp;SLA &amp; priority support</li>
+            <li>✓ &nbsp;Quarterly strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="text-align:center; padding-top:4rem; padding-bottom:5rem;">
+    <h2 class="section-title" style="max-width:500px; margin:0 auto 1rem;">Not sure which fits?</h2>
+    <p class="section-sub" style="margin:0 auto 2.5rem;">Drop us a message and we'll recommend the right package — no sales pitch, just honest advice.</p>
+    <a href="contact.html" class="btn btn-primary">Talk to Us →</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Nexus Studio. All rights reserved. &nbsp;·&nbsp;
+    <a href="about.html">About</a> &nbsp;·&nbsp;
+    <a href="services.html">Services</a> &nbsp;·&nbsp;
+    <a href="contact.html">Contact</a>
+  </p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
